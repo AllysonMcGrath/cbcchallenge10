@@ -2,7 +2,9 @@ const createHtml =
 function generatePage(employeeArr) {
 
   function generateEngineer(engineer) {
-      return `<div class="card">
+      return `
+      
+      <div class="card">
       <div class="container">
           <div class="heading">
               <h2>${engineer.getName()}</h2>
@@ -11,7 +13,7 @@ function generatePage(employeeArr) {
           <div class="details">
               <h4>ID: ${engineer.getId()}</h4>
               <h4>Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></h4>
-              <h4>GitHub: <a href="${engineer.getGithub()}">${engineer.github}</a></h4>
+              <h4>GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank">${engineer.github}</a></h4>
           </div>
       </div>
   </div>`
@@ -19,6 +21,7 @@ function generatePage(employeeArr) {
 
   function generateManager(manager) {
     return `
+
     <div class="card">
           <div class="container">
               <div class="heading">
@@ -36,6 +39,7 @@ function generatePage(employeeArr) {
 
     function generateIntern(intern) {
         return `
+
         <div class="card">
               <div class="container">
                   <div class="heading">
@@ -67,11 +71,15 @@ module.exports = team => { return `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/style.css">
     <title>My Team</title>
 </head>
 <body>
-    <h1>My Team</h1>${createHtml(team)}
+    <div class="page-title">
+        <h1>My Team</h1></div>
+    <div class="flex-container">
+        ${createHtml(team)}
+    </div>
 </body>
 </html>
 `}
