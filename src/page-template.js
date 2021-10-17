@@ -5,13 +5,13 @@ function generatePage(employeeArr) {
       return `<div class="card">
       <div class="container">
           <div class="heading">
-              <h2>${engineer.name}</h2>
-              <h3>${engineer.role}</h3>
+              <h2>${engineer.getName()}</h2>
+              <h3>${engineer.getRole()}</h3>
           </div>
           <div class="details">
-              <h4>ID: ${engineer.id}</h4>
-              <h4>Email: <a href="mailto:${engineer.email}">${engineer.email}</a></h4>
-              <h4>GitHub: <a href="github.com/${engineer.github}">${engineer.github}</a></h4>
+              <h4>ID: ${engineer.getId()}</h4>
+              <h4>Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></h4>
+              <h4>GitHub: <a href="${engineer.getGithub()}">${engineer.github}</a></h4>
           </div>
       </div>
   </div>`
@@ -22,12 +22,12 @@ function generatePage(employeeArr) {
     <div class="card">
           <div class="container">
               <div class="heading">
-                  <h2>${manager.name}</h2>
-                  <h3>${manager.role}</h3>
+                  <h2>${manager.getName()}</h2>
+                  <h3>${manager.getRole()}</h3>
               </div>
               <div class="details">
-                  <h4>ID: ${manager.id}</h4>
-                  <h4>Email: <a href="mailto:${manager.email}">${manager.email}</a></h4>
+                  <h4>ID: ${manager.getId()}</h4>
+                  <h4>Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></h4>
                   <h4>Office Number: ${manager.officeNumber}</h4>
               </div>
           </div>
@@ -39,13 +39,13 @@ function generatePage(employeeArr) {
         <div class="card">
               <div class="container">
                   <div class="heading">
-                      <h2>${intern.name}</h2>
-                      <h3>${intern.role}</h3>
+                      <h2>${intern.getName()}</h2>
+                      <h3>${intern.getRole()}</h3>
                   </div>
                   <div class="details">
-                      <h4>ID: ${intern.id}</h4>
-                      <h4>Email: <a href="mailto:${intern.email}">${intern.email}</a></h4>
-                      <h4>School: ${intern.school}</h4>
+                      <h4>ID: ${intern.getId()}</h4>
+                      <h4>Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></h4>
+                      <h4>School: ${intern.getSchool()}</h4>
                   </div>
               </div>
           </div>`
