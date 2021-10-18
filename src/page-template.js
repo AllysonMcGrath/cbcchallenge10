@@ -59,7 +59,6 @@ function generatePage(employeeArr) {
     html.push(employeeArr.filter(employee => employee.getRole() == "Manager").map(manager => generateManager(manager)));
     html.push(employeeArr.filter(employee => employee.getRole() == "Engineer").map(engineer => generateEngineer(engineer)));
     html.push(employeeArr.filter(employee => employee.getRole() == "Intern").map(intern => generateIntern(intern)));
-    console.log(html);
     return html.flat().join("");
 }
   

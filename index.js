@@ -100,8 +100,6 @@ const createTeam = () => {
         ])
       
         .then(data => {
-          console.log("Success")
-
             switch(data.createEmployee) {
                 case "Engineer":
                     engineerQuestions();
