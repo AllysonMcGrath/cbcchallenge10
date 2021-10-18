@@ -26,7 +26,7 @@ When displaying correctly, the command line and HTML page should look like the b
 ![Add employee questions listed in the command line](/src/images/addemployee.JPG)
 ![Add engineer questions listed in the command line](/src/images/engineerquestions.JPG)
 
-![Website with cards of each employee's information](/images/websiteimage.JPG)
+![Website with cards of each employee's information](/src/images/websiteimage.JPG)
 
 [Here](https://watch.screencastify.com/v/zdIVIina6Ug7pX5wYnuq) is a video showing the functionality of the code.
 
