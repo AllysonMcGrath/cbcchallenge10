@@ -12,7 +12,7 @@ This project uses HTML, CSS, Javascript, Node.js, and object oriented programmin
 
 To install this project, you can clone the repository by using the command prompt
 
-$ git clone https://github.com/AllysonMcGrath/cbcchallenge10.git
+$ git clone https://github.com/AllysonMcGrath/node-team-manager.git
 
 Detailed instructions for cloning GitHub repositories can be found [here.](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
